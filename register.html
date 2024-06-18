@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cadastro de Usuário</title>
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./assets/dolar.png" alt="logo">
+        </div>
+    </header>
+
+    <div class="box-desk">
+        <h3>Crie sua conta</h3>
+        <form id="registerForm">
+            <label for="name">Nome completo:</label>
+            <input type="text" id="registerName" placeholder="Digite seu nome"required><br><br>
+    
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" placeholder="Entre com seu endereço de e-mail"required><br><br>
+    
+            <label for="registerPassword">Senha:</label>
+            <input type="password" id="registerPassword" placeholder="Mínimo 8 caracteres"required><br><br>
+    
+            <label for="confirmPassword">Confirme a Senha:</label>
+            <input type="password" id="confirmPassword" placeholder="A senha não corresponde"required><br><br>
+    
+            <label for="birthdate">Data de Nascimento:</label>
+            <input type="date" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" required><br><br>
+    
+            <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">aceito os <strong id="openOverlayBtn">termos de uso</strong></label>
+            </div>
+    
+            <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">ativar <strong id="openOverlayBtn-2">autenticação de dois fatores</strong></label>
+            </div>
+    
+    
+            <div class="botao">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    
+        <div class="center-itens">
+            <p>Já tem uma conta? <a href="index.html">Faça login</a></p>
+        </div>
+    
+        <div id="overlay" class="overlay">
+            <div class="overlay-content">
+                <span id="closeOverlayBtn" class="close-btn">&times;</span>
+                <h4>Baixe aqui nossos termos de uso</h4>
+            </div>
+    
+        <div id="overlay-2" class="overlay">
+            <div class="overlay-content">
+                <span id="closeOverlayBtn-2" class="close-btn">&times;</span>
+                <h4>Recomendamos ativar a autenticação de dois fatores para aumentar a segurança da sua conta, protegendo seus dados contra acessos não autorizados. Obrigado!
+                    confira sobre em termos de uso</h4>
+            </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
